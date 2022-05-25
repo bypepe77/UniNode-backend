@@ -23,7 +23,7 @@ const createUser = async (req, res) => {
 
         const token = await generateToken( user.id );
 
-        res.json({ ok: true, user, token});
+        res.json({ status: true, user, token});
 
 
     } catch (error) {
